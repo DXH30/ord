@@ -12,11 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+ */
+Route::namespace('\App\Http\Controllers')->group(function() {
+ Route::get('/', 'PageController@index');
+});
 
 Route::get('/test', function () {
-    return "Docker workss!";
+ return "Docker workss!";
 });
