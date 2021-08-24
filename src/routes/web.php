@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
  */
 Route::namespace('\App\Http\Controllers')->group(function() {
- Route::get('/', 'PageController@index');
+ Route::get('/', 'PageController@login');
 });
 
 Route::get('/test', function () {

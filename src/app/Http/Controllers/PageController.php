@@ -10,4 +10,8 @@ class PageController extends Controller
  public function index(Request $request) {
   return view('page');
  }
+
+ public function login(Request $request) {
+  return view('login');
+ }
 }
